@@ -32,6 +32,10 @@ dependencies:
   # The following adds the Google font to your application.
   google_fonts: ^2.1.0
 
+  # The following config GoogleSignIn to your application.
+  google_sign_in: ^5.0.4
+  google_sign_in_web: ^0.10.0
+
   # The following config Firebase to your application.
   firebase_core: ^1.3.0
 
