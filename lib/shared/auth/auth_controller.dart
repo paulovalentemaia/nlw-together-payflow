@@ -12,11 +12,11 @@ class AuthController {
     if (user != null) {
       _isAuthemticated = true;
       _user = user;
-      Navigator.push(
+      Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => HomePage()));
     } else {
       _isAuthemticated = false;
-      Navigator.push(
+      Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => LoginPage()));
     }
   }
