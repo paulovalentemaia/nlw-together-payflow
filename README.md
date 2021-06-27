@@ -1,309 +1,79 @@
-# payflow
+<p align="center">
+  <img alt="PayFlow" src=".github/payflow-logo.png" width="200px">
+</p>
 
-A new Flutter project.
+<p align="center">
+  <img src="https://img.shields.io/github/stars/rocketseat-education/nlw-06-flutter?label=stars&message=MIT&color=000000&labelColor=8257e5" alt="Stars">
+  <img src="https://img.shields.io/github/forks/rocketseat-education/nlw-06-flutter?label=forks&message=MIT&color=000000&labelColor=8257e5" alt="Forks">     
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=000000&labelColor=8257e5" alt="License">
 
-## Getting Started
+</p>
 
-This project is a starting point for a Flutter application.
+<h2 align="center">Tópicos 📋</h2>
 
-A few resources to get you started if this is your first Flutter project:
+   <p>
+   
+   - [Sobre 📖](#sobre-)
+   - [Layout 🎨](#layout-)
+   - [Arquivos no Notion 📋](#arquivo-no-notion-)
+   - [Como Usar 🤔](#como-usar-)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+   </p>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
 
+<h2 align="center">Sobre 📖</h2>
+   
+<p>
+   O projeto PayFlow foi desenvolvido na Next Level Week Together 💜💚. Nosso evento incrível que sempre traz projetos inéditos, além da intensa rotina de estudos, muitas conexões e networking, trabalho em grupo e em comunidade. <br>
+   O PayFlow se trata de um app mobile feito em Flutter 💙 para Gerenciamento de Boletos, contendo recursos como o uso de câmera e galeria, Machine Leaning com MLKit, Firebase Core e SignIn, Animações e Estilizações Personalizadas, entre vários outros pontos, como o uso do SharedPreferences. <br>
+</p>
 
-# PayFlow
+---
 
+<h2 align="center">Layout 🎨</h2>
 
-# Paleta de cores
+   <p align="center">
+      <img alt="PayFlow" title="PayFlow" src=".github/capa.png" />
+   </p>
 
-**Obs:** o dart não interpreta diretamente com #, para utilizar é preciso trocar o # para 0xFF
+   <p align="center">
+      O Layout foi desenvolvido por <a href="https://instagram.com/tiagoluchtenberg">Tiago Luchtenberg</a>, e você pode acessá-lo no Figma:
+   
+   - <a href="https://www.figma.com/file/kLK7FYnWKMoN68sQXcSniu/PayFlow">Mobile</a> 📱
+   </p>
 
-Para utilizar uma cor no dart basta chamar Color(_inserir_hexadecimal_sem_#)
-```dart
-Color(0xFFFF941A); //Exemplo de uso
-``` 
+---
 
-| Nome da Cor | Hexadecimal | Dart | Tipo |
-|--|--|--|--|
-| primary |![#f03c15](https://via.placeholder.com/20/FF941A/000000?text=+) #FF941A |0xFFFF941A |Comuns |
-| grey | ![#f03c15](https://via.placeholder.com/20/585666/000000?text=+) #585666| 0xFF585666|Comuns |
-| delete |![#f03c15](https://via.placeholder.com/20/E83F5B/000000?text=+) #E83F5B|0xFFE83F5B |Comuns |
-| heading |![#f03c15](https://via.placeholder.com/20/585666/000000?text=+)#585666| 0xFF585666|Textos |
-| body |![#f03c15](https://via.placeholder.com/20/706E7A/000000?text=+) #706E7A|0xFF706E7A |Textos |
-| stroke |![#f03c15](https://via.placeholder.com/20/E3E3E6/000000?text=+) #E3E3E6|0xFFE3E3E6 |Items |
-| shape |![#f03c15](https://via.placeholder.com/20/FAFAFC/000000?text=+) #FAFAFC|0xFFFAFAFC |Items |
-| background |![#f03c15](https://via.placeholder.com/20/FFFFFF/000000?text=+) #FFFFFF| 0xFFFFFFFF|Items |
+<h2 align="center">Arquivo no Notion 📋</h2>
 
-Agora com a paleta de cores no jeito, você precisar criar o arquivo __appcolors.dart__  no seu projeto seguindo o esquema de diretório abaixo:
+- [Trilha | Flutter](https://www.notion.so/NLW-Together-Conte-dos-complementares-ae22125e899549efb2d4e360b5ee5ca3) 🚀
 
-```
-/lib
-	/shared
-		/themes
-			appcolors.dart
-````
+---
 
-Com o arquivo criado, agora precisamos construir a classe __AppColors__. Para facilitar o processo já deixei a classe implementado abaixo para você copiar e colar no projeto
+<h2 align="center">Como Usar 🤔</h2>
 
-**Obs:** 
-- Esse arquivo precisa ser criado dentro de /lib/shared/themes/appcolors.dart
--  Importante lembrar de colocar o import abaixo no início do arquivo para encontrar a classe __Color__
+   ```
+   - Clone esse repositório:
+   $ git clone https://github.com/rocketseat-education/nlw-06-flutter
 
-```dart
-import'package:flutter/material.dart'
-```
-Arquivo completo
+   - Entre no diretório:
+   $ cd nlw-06-flutter
 
-```dart 
-import  'package:flutter/material.dart';
-class AppColors {
-  static final primary = Color(0xFFFF941A);
-  static final grey = Color(0xFF585666);
-  static final delete = Color(0xFFE83F5B);
-  static final heading = Color(0xFF585666);
-  static final body = Color(0xFF706E7A);
-  static final stroke = Color(0xFFE3E3E6);
-  static final shape = Color(0xFFFAFAFC);
-  static final background = Color(0xFFFFFFFF);
-}
-```
+   - Instale as dependências:
+   $ flutter pub get
 
-## Utilizando o AppColors
+   - Inicie o app: 
+   $ flutter run
+   ```
 
-```dart
-final color = AppColors.primary;
-```
+---
 
+   >Esse projeto foi desenvolvido com ❤️ na #NextLevelWeekTogether da **[Rocketseat  💜🚀](https://rocketseat.com.br/)**.<br> 
+   **[Participe da nossa Comunidade! 👋](https://discordapp.com/invite/gCRAFhc)**.<br>
 
+---
 
-
-# Estilos dos Textos
-
-| Nome | Font | Size | Weight | Color
-|--|--|--|--|--|
-|titleHome | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |32px|600| heading
-| titleRegular | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |20px |400 | background|
-| titleBold | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |20px |600 |heading ou background|
-| titleListTile | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |17px |600 | heading|
-| trailingRegular| ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |16px |400 | heading|
-| trailingBold | ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |16px |600 | heading|
-| button | ![title](https://d144mzi0q5mijx.cloudfront.net/img/I/N/Inter.png ) |15px|400| primary, heading, gray ou background
-| buttonBold | ![title](https://d144mzi0q5mijx.cloudfront.net/img/I/N/Inter.png ) |15px|700| heading
-| caption| ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |13px |400 | background, shape ou body|
-| captionBold| ![title](https://d144mzi0q5mijx.cloudfront.net/img/L/E/Lexend-Deca-Regular.png ) |13px |600 | background, shape ou body|
-
-## Instalação
-Para realizar o processo de instalação precisamos acessar o pub.dev para pegar a versão mais atual do [GoogleFonts](https://pub.dev/packages/google_fonts).
-
-```yaml
-dependencies:
-  google_fonts: ^2.1.0
-``` 	
-
-Então nesse NLW iremos utilizar a versão citada acima.
-
-Para adicionar esse package precisamos acessar o pubspec.yaml na raíz do projeto e colocar o google_fonts.
-
-Ficando dessa forma:
-
-```yaml
-...
-dependencies:
-	flutter:
-		sdk: flutter
-	cupertino_icons: ^1.0.2
-	google_fonts: ^2.1.0
-...
-```
-
-Agora temos tudo no jeito para começar a criar nosso código.
-
-Agora com as configurações de package no jeito, você precisar criar o arquivo __app_text_styles.dart__  no seu projeto seguindo o esquema de diretório abaixo:
-
-```
-/lib
-	/shared
-		/themes
-			app_text_styles.dart
-```
-**Obs:** 
-- Esse arquivo precisa ser criado dentro de /lib/shared/themes/appcolors.dart
--  Importante lembrar de colocar o import abaixo no início do arquivo para encontrar a classe __GoogleFonts__
-
-```dart
-import  'package:google_fonts/google_fonts.dart';
-```
-Arquivo completo
-
-```dart 
-import  'package:flutter/material.dart';
-import  'package:google_fonts/google_fonts.dart';
-import  'package:payflow/shared/themes/app_colors.dart';
-class  TextStyles {
-static  final titleHome = GoogleFonts.lexendDeca(
-fontSize: 32,
-fontWeight: FontWeight.w600,
-color: AppColors.heading,
-);
-static  final titleRegular = GoogleFonts.lexendDeca(
-fontSize: 20,
-fontWeight: FontWeight.w400,
-color: AppColors.heading,
-);
-static  final titleBoldHeading = GoogleFonts.lexendDeca(
-fontSize: 20,
-fontWeight: FontWeight.w600,
-color: AppColors.heading,
-);
-static  final titleBoldBackground = GoogleFonts.lexendDeca(
-fontSize: 20,
-fontWeight: FontWeight.w600,
-color: AppColors.background,
-);
-static  final titleListTile = GoogleFonts.lexendDeca(
-fontSize: 17,
-fontWeight: FontWeight.w600,
-color: AppColors.heading,
-);
-static  final trailingRegular = GoogleFonts.lexendDeca(
-fontSize: 16,
-fontWeight: FontWeight.w400,
-color: AppColors.heading,
-);
-static  final trailingBold = GoogleFonts.lexendDeca(
-fontSize: 16,
-fontWeight: FontWeight.w600,
-color: AppColors.heading,
-);
-static  final buttonPrimary = GoogleFonts.inter(
-fontSize: 15,
-fontWeight: FontWeight.w400,
-color: AppColors.primary,
-);
-static  final buttonHeading = GoogleFonts.inter(
-fontSize: 15,
-fontWeight: FontWeight.w400,
-color: AppColors.heading,
-);
-static  final buttonGray = GoogleFonts.inter(
-fontSize: 15,
-fontWeight: FontWeight.w400,
-color: AppColors.grey,
-);
-static  final buttonBackground = GoogleFonts.inter(
-fontSize: 15,
-fontWeight: FontWeight.w400,
-color: AppColors.background,
-);
-static  final buttonBoldPrimary = GoogleFonts.inter(
-fontSize: 15,
-fontWeight: FontWeight.w700,
-color: AppColors.primary,
-);
-static  final buttonBoldHeading = GoogleFonts.inter(
-fontSize: 15,
-fontWeight: FontWeight.w700,
-color: AppColors.heading,
-);
-static  final buttonBoldGray = GoogleFonts.inter(
-fontSize: 15,
-fontWeight: FontWeight.w700,
-color: AppColors.grey,
-);
-static  final buttonBoldBackground = GoogleFonts.inter(
-fontSize: 15,
-fontWeight: FontWeight.w700,
-color: AppColors.background,
-);
-static  final captionBackground = GoogleFonts.lexendDeca(
-fontSize: 13,
-fontWeight: FontWeight.w400,
-color: AppColors.background,
-);
-static  final captionShape = GoogleFonts.lexendDeca(
-fontSize: 13,
-fontWeight: FontWeight.w400,
-color: AppColors.shape,
-);
-static  final captionBody = GoogleFonts.lexendDeca(
-fontSize: 13,
-fontWeight: FontWeight.w400,
-color: AppColors.body,
-);  
-static  final captionBoldBackground = GoogleFonts.lexendDeca(
-fontSize: 13,
-fontWeight: FontWeight.w600,
-color: AppColors.background,
-);
-static  final captionBoldShape = GoogleFonts.lexendDeca(
-fontSize: 13,
-fontWeight: FontWeight.w600,
-color: AppColors.shape,
-);  
-static  final captionBoldBody = GoogleFonts.lexendDeca(
-fontSize: 13,
-fontWeight: FontWeight.w600,
-color: AppColors.body,
-);
-}
-```
-
-## Utilizando o AppTextStyle
-
-```dart
-final style = AppTextStyles.titleHome;
-```
-
-# Configurando as imagens
-
-Para facilitar o nosso desenvolvimento do __PayFlow__ iremos precisar criar uma classe para gerenciar nossas imagens existentes na pasta assets do nosso projeto. Isso é uma tarefa bem tranquila de ser realizada.
-
-O primeiro passo é baixar as imagens nesse link do GoogleDrive
-[Baixar Imagens](https://drive.google.com/file/d/1o6eK1SbiF2d317GMheFLjLxIXkldw4OL/view?usp=sharing)
-
-Com as imagens já baixadas, faça a descompactação da pasta.
-
-Com isso, vamos colocar a pasta que veio dentro chamada __images__ no nosso projeto.
-
-A pasta __images__ precisa ir dentro da pasta __assets__. Se ela não existe crie uma na raíz do projeto
-
-```
-/assets
-	/images
-```
-
-Com isso feito precisamos modificar nosso arquivo no pubspec.yaml para ele entender que existe essa pasta.
-
-```yaml
-...
-flutter:
-  uses-material-design: true
-  assets:
-    - assets/images/
-```
-Pronto! Agora temos tudo no jeito para continuar nosso projeto. Agora precisamos criar uma arquivo __app_images.dart__ dentro de /lib/shared/themes para deixarmos tudo centralizado.
-
-Esse arquivo vai ser responsável por armazenar as urls das imagens.
-
-O arquivo fica dessa forma
-
-```dart
-class  AppImages {
-static  const logoFull = "assets/images/logofull.png";
-static  const logomini = "assets/images/logomini.png";
-static  const union = "assets/images/union.png";
-static  const person = "assets/images/person.png";
-static  const google = "assets/images/google.png";
-}
-```
-
-Como utilizar essa imagem?
-
-```dart
-Image.asset(AppImages.logoFull)
-```
+   <p align="center">
+      <img alt="NLW" title="PayFlow" src=".github/nlw.png" />
+   </p>

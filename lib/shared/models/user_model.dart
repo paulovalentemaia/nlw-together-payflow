@@ -20,4 +20,3 @@ class UserModel {
 
   String toJson() => jsonEncode(toMap());
 }
-//Início Bug UserModel
